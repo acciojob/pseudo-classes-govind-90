@@ -1,1 +1,40 @@
-/*  your css code here. If applicable */
+/* Entire Page Background */
+:root {
+    background-color: rgb(135, 206, 235); /* Light blue background for the whole page */
+}
+
+/* Article with Paragraphs */
+p:first-child {
+    background-color: black; /* Black background for the first paragraph */
+    color: white; /* White text color */
+}
+
+p:nth-child(2) {
+    color: inherit; /* Standard text color for the second paragraph */
+}
+
+p:last-child {
+    color: red; /* Red text color for the third paragraph */
+}
+
+/* Unordered List Styles */
+li {
+    background-color: gray; /* Default background color for all list items */
+    width: 50%; /* Set width of each list item */
+    padding: 10px; /* Add padding to list items */
+    margin-bottom: 5px; /* Add spacing between items */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+li:nth-child(odd) {
+    background-color: white; /* White background for odd items */
+}
+
+li:first-child,
+li:last-child {
+    font-size: 22px; /* Larger font size for the first and last list items */
+}
+
+li:nth-last-child(3) {
+    background-color: pink; /* Pink background for the third-to-last item */
+}
